@@ -40,7 +40,7 @@ O encapsulamento protege os dados internos de uma classe, permitindo acessar e m
 ```python
 class ContaBancaria:
     def __init__(self, saldo):
-        self.__saldo = saldo  # atributo privado
+        self.__saldo = saldo  
 
     def depositar(self, valor):
         self.__saldo += valor
@@ -50,7 +50,7 @@ class ContaBancaria:
 
 conta = ContaBancaria(100)
 conta.depositar(50)
-print(conta.ver_saldo())  # 150
+print(conta.ver_saldo())  
 ```
 
 ---
@@ -71,7 +71,7 @@ class Cachorro(Animal):
         print("Au au!")
 
 cachorro = Cachorro()
-cachorro.comer()  # herdado\ ncachorro.latir()
+cachorro.comer()  
 ```
 
 ---
